@@ -22,8 +22,8 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [Nomenclatura](#nomenclatura)
   - [Linter](#linter)
   - [Testes](#testes)
-  - [Dica: desativando testes](#dica-desativando-testes)
-  - [Dica: watch mode](#dica-watch-mode)
+    - [Dica: desativando testes](#dica-desativando-testes)
+    - [Dica: watch mode](#dica-watch-mode)
 - [Requisitos do projeto](#requisitos-do-projeto)
 
     `Requisitos Obrigatórios:`
