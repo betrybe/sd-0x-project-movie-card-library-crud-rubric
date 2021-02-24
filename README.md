@@ -310,7 +310,6 @@ Você precisará adicionar um estado em `MovieList` para controlar o que será e
 
 - Será validado se a página `MovieList` exibe um `MovieCard` para cada filme retornado pela API
 
-
 ### 3 - Insira um link para a página de detalhes de um filme dentro de `MovieCard`
 
 Todos os `MovieCard`s devem possuir em seu conteúdo, pelo menos, o título, a sinopse e um link com o texto "VER DETALHES" que aponta para a rota `movies/:id`, onde `:id` é o id do filme. Esta rota exibirá informações detalhadas de um filme.
