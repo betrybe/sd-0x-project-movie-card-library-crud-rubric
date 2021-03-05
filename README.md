@@ -124,7 +124,7 @@ Outra diferença importante neste projeto em relação aos anteriores é que os 
     * Exemplo: `git checkout master`
   * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b joaozinho-project-movie-card-library-crud`
+    * Exemplo: `git checkout -b joaozinho-project-movie-card-library-crud-rubric`
 
 4. Faça alterações em algum dos componentes que precisam de implementação, por exemplo o `App` em `src/`:
 ```jsx
@@ -156,10 +156,10 @@ export default App;
         * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
 6. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin joaozinho-project-movie-card-library-crud`
+  * Usando o exemplo anterior: `git push -u origin joaozinho-project-movie-card-library-crud-rubric`
 
 7. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-movie-card-library-crud-rubric/pulls)
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-rubric/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
@@ -202,13 +202,13 @@ Este repositório já contém um _template_ com um App React criado. Após clona
 
 ## Nomenclatura 
 
-**ATENÇÃO!** Muito cuidado com os nomes especificados nos requisitos! O conteúdo deve ser **exatamente igual** ao texto descrito no requisito. Em alguns componentes foram colocadas propriedades chamadas _data-testid_ que, sob qualquer hipótese não devem ser alteradas. Os detalhes acima tem implicação direta no funcionamento do avaliador.
+**ATENÇÃO!** Muito cuidado com os nomes especificados nos requisitos! O conteúdo deve ser **exatamente igual** ao texto descrito no requisito. Em alguns componentes foram colocadas propriedades chamadas _data-testid_ que, sob nenhuma hipótese devem ser alteradas. Os detalhes acima tem implicação direta no funcionamento do avaliador.
 
 Os testes foram desenvolvidos dessa forma para permitir uma maior liberdade para estruturar e estilizar a página, portanto, abusem da criatividade! 😉
 
-**⚠️ Adicione proptypes a todos os componentes ⚠️**
+**⚠️ Adicione PropTypes a todos os componentes ⚠️**
 
-Todos os componentes que recebem _props_ devem ter suas _proptypes_ corretamente declaradas. O _eslint_ checa automaticamente declaração de _proptypes_, portanto seu _Pull Request_ deverá estar com os _proptypes_ bem configurados para satisfazer os requisitos.
+Todos os componentes que recebem _props_ devem ter suas _PropTypes_ corretamente declaradas. O _eslint_ checa automaticamente declaração de _PropTypes_, portanto seu _Pull Request_ só receberá nota se elas estiverem feitas.
 
 ---
 
@@ -310,6 +310,7 @@ Você precisará adicionar um estado em `MovieList` para controlar o que será e
 
 - Será validado se a página `MovieList` exibe um `MovieCard` para cada filme retornado pela API
 
+
 ### 3 - Insira um link para a página de detalhes de um filme dentro de `MovieCard`
 
 Todos os `MovieCard`s devem possuir em seu conteúdo, pelo menos, o título, a sinopse e um link com o texto "VER DETALHES" que aponta para a rota `movies/:id`, onde `:id` é o id do filme. Esta rota exibirá informações detalhadas de um filme.
@@ -345,7 +346,6 @@ Os campos devem existir no cartão conforme ilustrado na imagem abaixo.
 
 - Será validado se `MovieDetails` contém um botão com o texto "EDITAR" que redireciona para a página de edição de filme
 
-
 ![image](card-details.png)
 
 ### Para os requisitos 5 e 6:
@@ -373,7 +373,7 @@ Ao ser montada, a página de edição do filme deve fazer uma requisição pra b
 - Será validado se `EditMovie` exibe o texto "Carregando..." enquanto estiver fazendo a requisição
 - Será validado se `EditMovie` contém um formulário preenchido com o título, subtítulo, sinopse, caminho da imagem e gênero do filme selecionado
 
-- Será validado se ao clicar no botão de submit, uma requisição para API é feita, e o filme selecionado é atualizado. Após a conclusão da atualização a pessoa usuária deve ser redirecionada para a página inicial
+- Será validado se, ao clicar no botão de submit, uma requisição para API é feita e o filme selecionado é atualizado. Após a conclusão da atualização a pessoa usuária deve ser redirecionada para a página inicial
 
 
 ### 6 - Insira um link na página inicial para `NewMovie` para criar novos cartões
